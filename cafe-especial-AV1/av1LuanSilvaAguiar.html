@@ -1,0 +1,280 @@
+
+<!-- 
+    LUAN SILVA AGUIAR   
+    C.C  
+    AV1 AMBIENTES DE INTERNET 
+-->
+
+<!-- JQUERY HABILITADO NO PROCESSO DE CADASTRO -->
+<!-- JAVASCRIPT -> PROMPT E ALERT HABILITADOS NO BOTÃO DE CADASTRO NA BARRA DE NAVEGAÇÃO -->
+<!-- JAVASCRIPT -> ALERT HABILITADO EM AMBOS OS FORMULÁRIOS DA PÁGINA -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>HTML5</title>
+    <meta charset="UTF-8">
+    <link href="meu_estilo.css" rel="stylesheet" type="text/css" media="all">
+    <script src="jquery-1.11.1.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+</head>
+<body>
+    <header><h1>Rota do Café</h1></header>
+
+    <nav>
+        <ul>
+            <li> <a href="">Cafés Especiais</a></li>
+            <li> <a href="">História</a></li>
+            <li> <a href="">Tipos de grãos</a></li>
+            <li> <a href="#links">Bibliografia</a></li>
+
+            
+            <li><button value="você já é cadastrado?" onClick="promp()"> <span> Você já é Cadastrado?</span></button></li>
+        </ul>
+    </nav>
+    <section id="intro">
+        <header>
+            <h2>Você sabe o que é Café Especial?</h2>
+            <p align="justify"> Café especial não é um adjetivo para alguns tipos de cafés, mas sim uma definição técnica para cafés de alta qualidade mundo afora.
+            </p>
+            <img src="cafeespecial1.jpg" >
+        </header>
+    </section>
+
+    <div id="content">
+
+    <div id="maincontent">
+
+        <section>
+            <article>
+                <h2>Café especial, uma viagem sem volta</h2>
+                <p>Bom, o café é uma bebida que tem muita história pra contar, não é? Boas, e outras nem tanto... Afinal, o café é responsável por parte da colonização e o desenvolvimento de muitos países tropicais. Aqui, vamos ficar com as boas. Nesse longo tempo, essa bebida preta foi passando por muitas mudanças e hoje é consumida em larga escala em todo o planeta.</p>
+                <p>a “ABIC” - Associação Brasileira das Indústria de Café com o intuito de padronizar os cafés torrados brasileiros criou um protocolo privado, chamado “Selo ABIC”.</p>
+                <p>Assim, por meio de três selos gradativos, Tradicional, Superior e Gourmet, procuram garantir três níveis de qualidade. E partem do princípio que haja apenas café dentro do pacote, um selo de pureza. Poxa, mas isso não é o básico? Pois é...</p>
+                <img src="cm01.jpg">
+                <p>O famoso termo “café especial”, é o nome dado para uma categoria de cafés que possui uma graduação a partir de 80 pontos numa escala de 0 a 100 de avaliação sensorial da Metodologia SCA. A classificação do “Speciality coffee” é feita através de um degustador certificado de café, o Q Grader. Esse nome esquisito é dado para todo profissional treinado e aprovado pela organização.</p>
+                <h2 id="par2">Quem é a SCAA?</h2>
+                <p>A Specialty Coffee Association (SCA) é uma associação comercial construída sobre os critério da livre informação, inclusão e o poder do conhecimento compartilhado. O objetivo da SCA é estimular as comunidades cafeeiras globais a apoiar atividades que tornem o café mais sustentável, equitativo e próspero para toda a cadeia de valor. De cafeicultores a baristas e torrefadores, nossos membros se estendem por todo o mundo, abrangendo todos os elementos da cadeia de valor do café.</p>
+                <p>A SCA atua como uma força unificadora dentro da indústria de cafés especiais e trabalha para tornar o café melhor, elevando os padrões em todo o mundo por meio de uma abordagem colaborativa e progressiva. Dedicado a construir uma indústria que seja justa, sustentável e estimulante para todos, o SCA se baseia em anos de conhecimento e pura inspiração da comunidade de cafés especiais.</p>
+                <p>Mas devido a toda produção e conceito do café especial ser muito amplo, foi necessário criar uma metodologia que pudesse avaliar de forma sensorial e objetiva o café. E inclusive essa metodologia chamada de SCA Cupping Method garante a capacidade de poder avaliar com mais precisão a qualidade do produto.</p>
+                <p>Essa metodologia consiste em uma planilha, onde são listados 10 atributos para avaliação do café, sendo pontuados de 0 a 10. Baseado em conceitos científicos, é possível quantificar todos os elementos que fazem parte do processo. O produto que atingir o mínimo de 80 de 100 pontos, passa a ser considerado através deste método um café especial.</p>
+                <h2>Café especial: Qual sua diferença em relação ao tradicional?</h2>
+                <p>Antes de entrar neste tópico, por tudo que foi citado anteriormente você concorda que são diversos itens avaliados na degustação de um café e mais ainda, como isso realmente é levado a sério para aqueles que o comercializam.</p>
+                <p>No dia que você puder provar um café especial que passou com louvor em todos os testes citados, você nunca mais vai querer o famoso cafezinho tradicional. Neste tópico, vamos explicar as diferenças entre ambos. Vamos lá?</p>
+                <p>Atualmente nosso país consegue produzir 50 milhões de sacas de café que são divididos entre os grãos arábica e conilon. O café arábica é normalmente mais doce, ácido enquanto o robusta (conillon) é menos complexo. </p>
+                <p>Mas isso é sempre assim? Não! Podem existir bons cafés robusta, mas ainda poucos. Podemos dizer que um café 100% arábica é especial? Não! Não há relação com a espécie ou variedade, ou seja os parâmetros são sensoriais. Como vamos falar no tópico mais abaixo. </p>
+                <p>Agora, tem uma coisa pra nós do URBE muito importante. Café especial vai muito além de uma boa xícara de café. O café especial é bem cuidado, cada lote é conhecido, colhido da melhor forma, registrado e, portanto, tem uma história de produção.</p>
+                <p>O local, a adubação, o clima, quase tudo interfere nesse sabor final. Em seguida, cada lote é provado e cria-se uma enorme expectativa de como cada lote de café vai se apresentar e com quais parâmetros.</p>
+                <p>E nós, garimpeiros destes cafés de qualidade, estamos atrás deste relacionamento, destas histórias, de como cada lote foi produzido e contato pelo próprio produtor. E, claro, soma-se a isso a tradição, o aconchego de uma xícara de café, isso não pode mudar. Esse é o padrão URBE de qualidade.</p>
+                <img src="cm03.png" id="cap">
+                <caption>parâmetros utilizados</caption>
+                <p></p>
+                <h3>Fragrância e Aroma</h3>
+                <p>Fragrância, é o cheirinho do café quando moído e ainda seco.</p>
+                <p>Aroma, quando o café recebe a água em infusão. Serve para perceber as substâncias voláteis, ou seja, o aroma que sobe ao molhar o café. Assim como a fragrância, precisa ser agradável, não podem ser cheiros desagradáveis ou repugnantes, que lembram, por exemplo, químicos, medicinais ou sintéticos, como borracha.</p>
+                <h3>Sabor</h3>
+                <p>Aqui é avaliado as primeiras impressões do gosto da bebida, é considerado uma das etapas mais importantes para os cafés. É da avaliação de sabor que são identificadas as notas sensoriais do café, como mel, mascavo, cana, frutado, floral, geleia, chocolate, caramelo e por aí vai.</p>
+                <h3>Doçura</h3>
+                <p>O café especial possui frutose, que é basicamente açúcar do fruto. Quando torramos demais a gente perde a doçura, quando torramos na quantidade certa, conseguimos caramelizar a frutose dando uma doçura agradável e presente na boca.</p>
+                <p>Manter a doçura do fruto após a secagem e a torra é um fator determinante para a pontuação do café especial.</p>
+                <h3>Corpo</h3>
+                <p>Aqui é avaliado a sensação tátil deixada na língua e no céu da boca, de peso, viscosidade e consistência quando bebemos café. Bebidas com corpo marcante recebem nota 10 nesse item. Para perceber essa experiência de forma simples e didática, prove dois copos d’água, sendo um deles adoçado. Você irá notar facilmente as diferenças na língua.</p>
+                <h3>Acidez</h3>
+                <p>Uma parte importante para o café especial e que deve ser notado pela sensação deixada na lateral da língua, a acidez é responsável pela vivacidade, frescor e brilho sensorial. O brasileiro muitas vezes tem uma percepção ruim da acidez, como algo errado, um defeito. Mas procure pensar na acidez cítrica das frutas.</p>
+                <h3>Equilíbrio</h3>
+                <p>A forma como todos os itens anteriores se complementam dentro da boca e também contrastam um com o outro. Aqui o que importa é a harmonia entre os eles, se há algum em excesso, em caso negativo para um e positivo para outro a pontuação é reduzida.</p>
+                <h3>Uniformidade</h3>
+                <p>É avaliado a uniformidade da bebida em mais de um copo, se algum mostrar alguma variação a pontuação automaticamente diminui.</p>
+                <h3>Finalização</h3>
+                <p>Refere-se ao gosto que o café deixa no paladar após sua ingestão, para uma boa qualidade o sabor deixado deve ser agradável. Caso contrário, a pontuação será baixa.</p>
+                <h3>Defeitos</h3>
+                <p>Aqui são avaliados os defeitos que podem aparecer na preparação e degustação da bebida, se tiver um sabor alto de fermentação indesejada ou sabor com muita adstringência, como sabor verde ardido de banana verde, por exemplo. Isso contribui de forma negativa em sua pontuação para um café especial.</p>
+                <h3>Avaliação Final</h3>
+                <p>Este é um atributo subjetivo. Trata-se da avaliação final e sintetizada de todos os atributos pela visão individual do degustador.</p>
+                <p>Uma amostra bem avaliada, mas que apresente disparidades, pode receber um valor menor do que uma que demonstre perfeitamente suas características, originalidade e qualidade e que certamente será melhor pontuada.</p>
+                <img src="provoucm2.png">
+                <p></p>
+                <h3 id="fim">Gostou do conteúdo? Cadastre-se abaixo para receber notificações no seu e-mail!</h3>
+            
+            </article>
+        </section>
+        <section id="envio">
+            <article>
+                <form name="check1" method="post">
+                    <h3> Cadastre-se para receber ofertas sobre café ou novidades por e-mail</h3>
+                    <p>
+                        <label for="name">Nome: </label>
+                        <input type="text" name="name" id="name" onInput="checkform1()" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail: </label>
+                        <input type="text" name="email" id="email" onInput="checkform1()" required>
+                    </p>
+                    <p>
+                        <label for="nascimento">Data de Nascimento: </label>
+                        <input type="text" name="nascimento" id="nascimento" onInput="checkform1()" required>
+                    </p>
+                    <p>
+                        <label for="cep">CEP: </label>
+                        <input type="text" name="cep" id="cep" onInput="checkform1()" required>
+                    </p>
+                    <p>
+                        <label for="telefone">Telefone: </label>
+                        <input type="text" name="telefone" id="telefone" onInput="checkform1()" required>
+                    </p>
+                    <p>
+                        <input id="cadastro1" disabled="disabled"  type="submit"  value="Enviar cadastro" onClick="cadastro()" required>
+                    </p>
+                </form>
+            </article>
+        </section>
+        <section id="envio">
+            <article>
+                <form name="comentary" method="post">
+                    <h3> Diga o que gostaria de ver por aqui</h3>
+                    <p>
+                        <label for="name">Nome: </label>
+                        <input type="text" name="name" id="name" onInput="checkform2()" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail: </label>
+                        <input type="text" name="email" id="email" onInput="checkform2()" required>
+                    </p>
+                    <p>
+                        <label for="coment">Comentário: </label>
+                        <textarea name="coment" id="coment" onInput="checkform2()" required></textarea>
+                    </p>
+                    <p>
+                        <input id="comentario" disabled="disabled"  type="submit" value="Enviar comentário" onClick="comment()" required>
+                    </p>
+                </form>
+            </article>
+        </section>
+        <section id="comments">
+            <h3>Comentários</h3>
+
+            <article>
+                <header>
+                    <a href="">Café Lover</a>
+                </header>
+                <p>Amei o conteúdo e já me inscrevi para receber no e-mail as atualizações! :)</p>
+            </article>
+
+            <article>
+                <header>
+                    <a href="">Rodrigo</a>
+                </header>
+                <p>Fiquei sabendo que em alguns dias vou poder comprar um café especial diretamente com vocês!! Já até me cadastrei!!</p>
+            </article>
+
+            <article>
+                <header>
+                    <a href="">Vinicius</a>
+                </header>
+                <p>Esta análise sensorial está impecável, adorei!</p>
+            </article>
+        </section>
+        
+    </div>
+    <aside>
+
+        <section>
+            <h3>Conteúdo</h3>
+            <ul>
+                <li><a href="#par2">Quem é SCAA?</a></li>
+                <p></p>
+                <li><a href="#cap">Parâmetros sensoriais</a></li>
+                <p></p>
+                <li><a href="#fim">Cadastro</a></li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h3>Conteúdo Recomendado</h3>
+            <ul>
+                <li><a href="https://www.graogourmet.com/blog/prova-de-cafe-especial/" target="_blank">Cupping</a></li>
+                <p></p>
+                <li><a href="https://www.uol.com.br/nossa/noticias/redacao/2020/08/15/produtores-de-cafe-artesanal-apostam-em-delivery-e-eventos-online-na-crise.htm" target="_blank">Delivery de Café na pandemia</a></li>
+                <p></p>
+                <li><a href="https://jc.ne10.uol.com.br/social1/2016/03/27/cinco-motivos-para-beber-cafes-especiais/index.html" target="_blank">5 motivos para beber café especial</a></li>
+
+            </ul>
+        </section>
+
+    </aside>
+    </div>
+
+    <footer>
+        <div>
+            <section id="about">
+                <h3>Bibliografia</h3>
+                <p>Blog u coffee</p>
+                <p>Unique</p>
+            </section>
+
+            <section id="links">
+
+            <section id="links">
+                <h3>Saiba Mais</h3>
+                <ul>
+                    <li><a href="https://uniquecafes.com.br/o-que-e-cafe-arabica-e-robusta/">O que é café arábica e robusta?</a></li>
+                </ul>
+            </section>
+            </section>
+        </div>
+    </footer>
+    <script>
+        jQuery(function($){
+            $('#nascimento').mask("99/99/9999");
+            $('#telefone').mask("(99)99999-9999");
+            $('#cep').mask("99999-999");
+        })
+        function promp(){
+            if (prompt('Você já é cadastrado no nosso correio eletrônico?   -  >  s / n') == 'n'){
+                
+                window.location.href="#envio"
+                alert("Cadastre-se agora mesmo abaixo: ")
+            }
+        }
+
+        function cadastro(){
+            
+            alert("Cadastrado com Sucesso");
+            location.reload();
+        }
+        function comment(){
+            
+            alert("O seu comentário passará por uma verificação antes de ser aprovado");
+            location.reload();
+        }
+
+        function checkform1(){
+            var f = document.forms["check1"].elements;
+            var cansubmit = true;
+
+            for (var i = 0; i < f.length; i++) {
+                    if (f[i].value.length == 0) {
+                    cansubmit = false;
+                    }
+                }
+                if (cansubmit) {
+                    document.getElementById('cadastro1').disabled = !cansubmit;
+                }
+            };
+
+            function checkform2(){
+            var f = document.forms["comentary"].elements;
+            var cansubmit = true;
+            for (var i = 0; i < f.length; i++) {
+                    if (f[i].value.length == 0) {
+                    cansubmit = false;
+                    }
+                }
+                if (cansubmit) {
+                    document.getElementById('comentario').disabled = !cansubmit;
+                }
+            };
+    </script>
+</body>
+</html>
